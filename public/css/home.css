@@ -1,0 +1,14 @@
+
+body {
+    /*background-image: url("/image/backgrounds/transparentGif5.webp"),linear-gradient(128deg, blue,fuchsia, aquamarine,magenta, #99ffff, skyblue, violet,hotpink,aqua, purple,blue);*/
+    background: linear-gradient(128deg, blue,fuchsia, aquamarine,magenta, #99ffff, skyblue, violet,hotpink,aqua, purple,blue);
+    background-size: 200% 200%;
+    /*opacity: 0.2;*/
+    animation: bgGradient 20s ease infinite;
+}
+
+@keyframes bgGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}

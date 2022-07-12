@@ -1,0 +1,88 @@
+/* Dropdown button */
+.dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: .5rem 1rem;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+}
+.dropdown-content a:hover {
+  background-color: blue;
+  color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: black;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
+
+.header{
+  background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+  height: 170px;
+}
+
+.header .logo-img{
+  height: 150px;
+  width: auto;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: inset black 0px 0px 20px 0px, white 0px 0px 30px 0px, white 0px 0px 10px 90px inset;
+}
+div.header.row > div.col-10{
+  margin: auto 0;
+}
+.user-info table thead tr th{
+  text-align: center;
+}
+.header .header-middle{
+  text-align: center;
+  padding-right: 3%;
+  color: lightcyan;
+}
+.header .header-middle h1{
+  text-shadow: 2px 2px pink;
+}
+
+.header .header-right table {
+  border: 1px solid lightgrey;
+  color: white;
+}
+
+.user-details tr tbody th:first-child{
+  text-align: left;
+}
+.user-details tbody tr td::before{
+  content: ": ";
+  font-weight: bold;
+}
+.user-details tbody tr td{
+  margin-left: 100px;
+}
+.user-details tr th, .user-details tr td {
+  text-align: left;
+}
+.user-details tr td {
+  padding-left: 2%;
+}
+
+.pp img{
+  border-radius: 40%;
+  /*border: 1px solid white;*/
+  height: 150px;
+  width: 150px;
+}

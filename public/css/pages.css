@@ -1,0 +1,80 @@
+body.blog{
+  background: url("../image/backgrounds/computer-bg.jpg") no-repeat fixed  center ;
+  background-color:  #916008;
+  background-size: cover;
+  background-blend-mode:multiply;
+  color: white;
+  counter-reset: session question;
+
+}
+/*body.blog div.row.blog:not(:nth-child(2)) h1::after {
+  counter-increment: session;
+  content: "SESSIONnnn " counter(session);
+}*/
+
+div.row.blog{
+  background: hsla(54, 97%, 90%, 0.87);
+  color: black;
+  padding: 60px;
+  margin: 40px 0px;
+}
+
+.blog div.question h4.question::before{
+  counter-increment: question;
+  content: "QUESTION " counter(question) " : ";
+  color: red;
+  font-weight: bolder;
+  float: left;
+
+}
+.blog > div.question{
+  border: 20px solid red;
+  border-spacing: 20px;
+  border-color: red blue orange green;
+}
+.blog .answer{
+  margin-top: 20px;
+}
+.blog .answer::before{
+  content: "Answer : ";
+  float: left;
+  color: red;
+  font-weight: bolder;
+}
+.blog .answer .underline{
+  text-decoration: wavy underline green;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.blog .answer .row{
+  border: 1px dotted grey;
+  margin: 2px;
+}
+.blog .answer .row .col-3::before {
+   font-family: "Font Awesome 5 Free";
+   content: "\00BB \00a0 \00a0 ";
+   font-size: 20px;
+   font-weight: bold;
+   float: left;
+   font-size: 1.9rem;
+}
+.blog .answer .row .col-3{
+   font-size: 1.1rem;
+   float: left;
+   text-align: center;  
+  color: green;
+  font-weight: bold;
+}
+
+.blog .answer .row .col-3{
+
+}
+.blog .answer .row .col-3:after{
+  content:" : ";
+  color: green;
+  float: right;
+}
+.blog .answer dl dt{
+  font-weight: bolder;
+}
